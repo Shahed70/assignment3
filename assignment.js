@@ -7,6 +7,8 @@ function kilometerToMeter(kilometer){
         var meter = kilometer * 1000;
         return meter;
 }   
+kilometerToMeter(5)
+
 
 
 //Budget calculator function
@@ -24,6 +26,8 @@ function budgetCalculator(numberOfWatch, numberOfPhone, numberOfLaptop){
     return totalCost;
 
 }
+budgetCalculator(10, 7, 5)
+
 
 
 // Hotel cost function
@@ -50,3 +54,20 @@ function hotelCost(numberOfDays){
     }
     return totalHotelCost;
 }
+
+hotelCost(23)
+
+
+
+//Mega friend function
+
+function megaFriend(friends){
+    var nameLength = "";
+    for(var i=0; i<friends.length; i++){
+    if(nameLength.length < friends[i].length){
+        nameLength = friends[i];
+        }
+    }
+    return nameLength;
+}
+megaFriend(['Rohim', 'Karim', 'Abdul Kader', 'Shahed'])
